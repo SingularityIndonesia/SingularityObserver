@@ -46,3 +46,4 @@ File(settingsDir, "Project/Android/library")
     ?.forEach { dir ->
         include(":Project:Android:library:${dir.name}")
     }
+include(":Project:Android:library:vision")
