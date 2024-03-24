@@ -5,7 +5,7 @@ Open for contribution.
 Contact me via [email: stefanus.ayudha@gmail.com](mailto:stefanus.ayudha@gmail.com) with the following format:<br/>
 ```markdown
 Subject: 
-I want to contribute to Singularity Mobile APP!
+I want to contribute to Singularity Observer!
 
 Body:
 Github user name: John Doe.
