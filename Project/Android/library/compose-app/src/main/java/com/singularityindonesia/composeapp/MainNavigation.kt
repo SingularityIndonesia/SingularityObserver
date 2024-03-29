@@ -6,25 +6,37 @@
 package com.singularityindonesia.composeapp
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.singularityindonesia.screen.dashboard.DashboardScreen
 import com.singularityindonesia.screen.exampletodolist.ExampleTodoListScreen
+import com.singularityindonesia.screen.takepicture.TakePictureScreen
 
 
 @Composable
-fun ExampleNavigation() {
+fun MainNavigation() {
     val navController = rememberNavController()
 
     NavHost(
         navController = navController,
-        startDestination = "todo-list"
+        startDestination = "dashboard"
     ) {
 
         composable(
-            route = "todo-list",
+            route = "dashboard",
         ) {
-            ExampleTodoListScreen()
+            val onTakePicture = remember{
+                { navController.navigate("takePicture") }
+            }
+            DashboardScreen(onTakePicture)
+        }
+
+        composable(
+            route = "takePicture",
+        ) {
+            TakePictureScreen()
         }
     }
 }

@@ -8,14 +8,14 @@ package com.singularityindonesia.singularityindonesia
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.singularityindonesia.composeapp.ExampleApp
+import com.singularityindonesia.composeapp.App
 
-class ExampleActivity : ComponentActivity() {
+class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ExampleApp()
+            App()
         }
     }
 }
