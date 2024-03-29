@@ -26,6 +26,7 @@ dependencies {
     implementation("std:flow")
 
     implementation(project(":library:viewmodel"))
+    implementation(project(":library:camera"))
 
     implementation(libs.android.core.ktx)
     implementation(libs.android.appcompat)
